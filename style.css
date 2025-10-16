@@ -1,0 +1,214 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.page-section {
+    min-height: 100vh;
+}
+
+/* Home Section */
+.bg-container {
+    background-image: url("https://d2clawv67efefq.cloudfront.net/ccbp-static-website/ocean.jpg");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.tourism-card {
+    text-align: center;
+    background-color: white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 30px 20px;
+    width: 60%;
+}
+
+.button {
+    color: white;
+    background-color: #25b1cc;
+    width: 138px;
+    height: 36px;
+    border-width: 0px;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #1f9cb5;
+    transform: translateY(-2px);
+}
+
+.main-heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0f0e46;
+    margin-bottom: 10px;
+}
+
+.paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #6c6b70;
+    margin-bottom: 20px;
+}
+
+/* Favourite Places Section */
+.favourite-places-bg-container {
+    background-image: url("https://d2clawv67efefq.cloudfront.net/ccbp-static-website/towerbg.png");
+    min-height: 100vh;
+    background-size: cover;
+    padding: 24px;
+}
+
+.favourite-places-heading {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.favourite-place-card-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.favourite-place-card-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.favourite-place-card-heading {
+    color: #0f0e46;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.favourite-place-card-description {
+    color: #6c6b70;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.favourite-place-card-image {
+    width: 80px;
+    height: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.favourite-place-card-text-container {
+    margin-right: 15px;
+    flex: 1;
+}
+
+.back-button {
+    margin-top: 20px;
+    width: 100px;
+}
+
+/* Detailed View Section */
+.detailed-view-bg-container {
+    background-image: url("https://d2clawv67efefq.cloudfront.net/ccbp-static-website/seabg.png");
+    min-height: 100vh;
+    background-size: cover;
+    padding: 24px;
+}
+
+.detailed-view-heading {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.detailed-view-card-container {
+    background-color: white;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.detailed-view-card-heading {
+    color: #0f0e46;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.detailed-view-card-description {
+    color: #6c6b70;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.detailed-view-card-text-container {
+    padding: 20px;
+}
+
+/* Carousel Styles */
+.carousel-indicators li {
+    background-color: #6c6b70;
+}
+
+
+.carousel-indicators .active {
+    background-color: #25b1cc;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-size: 50%;
+}
+
+/* Responsive Styles */
+@media (max-width: 576px) {
+    .tourism-card {
+        padding: 20px 15px;
+    }
+    
+    .main-heading {
+        font-size: 2rem;
+    }
+    
+    .favourite-place-card-container {
+        flex-direction: column;
+    }
+    
+    .favourite-place-card-image {
+        width: 100%;
+        height: 150px;
+        margin-top: 10px;
+    }
+    
+    .favourite-place-card-text-container {
+        margin-right: 0;
+    }
+}
